@@ -1,0 +1,26 @@
+.signinFormContainer{
+    margin: 0 auto;
+    width: 300px;
+    height: fit-content;
+    margin-top: 8rem;
+    background: rgb(245, 242, 242);
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.inputS{
+    margin: 10px 0px 10px 0px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04), 0 6px 20px 0 rgba(0, 0, 0, 0.1); 
+}
+.loginButton{
+    width: 180px;
+    position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.userDropDown{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1rem;
+    background: white;
+}
