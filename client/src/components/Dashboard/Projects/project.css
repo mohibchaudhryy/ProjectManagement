@@ -1,0 +1,35 @@
+.createProjectDiv{
+    padding: 30px;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.createProjectHeading{
+    margin-bottom: 40px;
+}
+.pTInput{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.createProjectBtn{
+    margin: 25px;
+    right: 12px;
+    width: 250px;
+    height: 55px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.projectDescription{
+    margin: 40px 0 10px 0;
+    color: #6c757d;
+    font-weight: bold;
+    font-size: 28px;
+}
+.createProjectBtn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+
+}

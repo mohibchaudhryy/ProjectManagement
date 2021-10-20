@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import express from 'express';
 
 import userRouter from './routes/uroutes.js';
+import projectRouter from './routes/proutes.js';
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(cors());
 
 app.use("/user", userRouter);
+app.use("/admin/projects", projectRouter);
 
 
 

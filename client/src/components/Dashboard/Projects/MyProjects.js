@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import jwt from 'jsonwebtoken';
 
-import Head from './Head';
-import AdminNavigation from './AdminNavigation';
-import UserNavigation from './UserNavigation';
+import Head from '../Head';
+import AdminNavigation from '../AdminNavigation';
+import UserNavigation from '../UserNavigation';
 
-import './Dashboard.css';
-import './Navigation.css';
-
-const Dashboard = () => {
+const MyProjects = () => {
     const history = useHistory();
     const [token] = useState(JSON.parse(localStorage.getItem('token')));
     const user = jwt.decode(token);
@@ -25,10 +22,10 @@ const Dashboard = () => {
                     <div className="leftN"><AdminNavigation /></div>:
                     <div className="leftN"><UserNavigation /></div>
                 }
-                <div>Dashboard</div>
+                <div>MyProjects</div>
             </div>
         </div>
     )
 }
 
-export default Dashboard;
+export default MyProjects;
