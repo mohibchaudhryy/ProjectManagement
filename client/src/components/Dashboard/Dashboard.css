@@ -1,0 +1,46 @@
+.head{
+    background: white;
+    min-height: 60px;
+    color: white;
+    background: #111;
+    position: relative;    
+}
+.logoutBtn{
+    width: 100px;
+    height: 45px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 4px;
+    right: 35px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.imageLogo{
+    content: url('../../images/Selection_008.png');
+    height: 55px;
+    margin-left: 25px;
+}
+.imageLogo:hover{
+    cursor: pointer;
+}
+.leftN{
+    min-width: 300px;
+}
+.navigation{
+    color: white;
+    background: #1b1b1b;
+    min-height: 1000px;
+    color: white;
+}
+.gridContainer{
+    display: grid;
+    grid-template-rows: 1fr ;
+}
+.grifContainer1{
+    background: white;
+    display: grid;
+    grid-template-columns: 0.7fr 3fr
+}
