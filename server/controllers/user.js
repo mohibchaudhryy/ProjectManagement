@@ -6,10 +6,11 @@ import UserModel from "../models/userModel.js";
 const secret = 'projectmanagementtool';
 
 export const signin = async (req, res) => {
-    const { userName, password } = req.body;
+    const { userName, password, userType } = req.body;
     try {
     const oldUser = await UserModel.findOne({ userName });
     if (!oldUser) return res.status(404).json({ message: "User doesn't exist" });
+    if (oldUser.userType !== userType) return res.status(404).json({ message: "No such user" });
     const isPasswordCorrect = await bcrypt.compare(password, oldUser.password);
     if (!isPasswordCorrect) return res.status(400).json({ message: "Invalid credentials" });
     const token = jwt.sign({ name: oldUser.name, userType: oldUser.userType, userName: oldUser.userName, id: oldUser._id }, secret, { expiresIn: "1h" });
