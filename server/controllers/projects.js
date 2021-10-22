@@ -49,7 +49,6 @@ export const allocateProject = async (req, res) => {
         // user.allocatedProjects.push(result._id);
         // const updatedUser = await UserModel.findByIdAndUpdate(user._id, user, { new: true });
 
-        console.log(updated);
         res.status(201).json(updated);
     } catch (err) {
         res.status(500).json( { message: 'Something went wrong'});

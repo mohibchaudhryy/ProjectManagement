@@ -11,3 +11,8 @@ export const createProject = (formData) => API.post('/admin/projects/createproje
 export const allProjects = () => API.get('/admin/projects/allprojects');
 export const allocateProject = (data,id) => API.patch(`/admin/projects/allocateproject/${id}`,data);
 export const allAllocatedProjects = (id) => API.get(`/ruser/allallocatedprojects/:${id}`);
+
+export const createTask = (formData) => API.post('/projects/tasks/createtask', formData);
+export const allTasks = () => API.get(`/projects/tasks/alltasks`);
+export const updateTask = (data) => API.patch(`/projects/tasks/updatetask`, data);
+export const updateCompleteTask = (id) => API.patch(`/projects/tasks/completetask/${id}`);

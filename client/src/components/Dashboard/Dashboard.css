@@ -37,10 +37,18 @@
 }
 .gridContainer{
     display: grid;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 0fr 5fr ;
 }
 .grifContainer1{
     background: white;
     display: grid;
-    grid-template-columns: 0.7fr 3fr
+    grid-template-columns: 0.7fr 3fr;
+}
+.third{
+    height: fit-content;
+    overflow-y: scroll;
+    height: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
 }

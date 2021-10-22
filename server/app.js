@@ -5,6 +5,7 @@ import express from 'express';
 
 import userRouter from './routes/uroutes.js';
 import projectRouter from './routes/proutes.js';
+import taskRouter from './routes/troute.js';
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(cors());
 app.use("/user", userRouter);
 app.use("/admin/projects", projectRouter);
 app.use("/ruser",projectRouter)
+app.use("/projects/tasks", taskRouter);
 
 
 app.get('/', (req, res) => {

@@ -67,7 +67,7 @@ const AllProject = () => {
                         <DescriptionDisplay description={description}/>
                         <ProjectAllocation projects={projects} currentId={currentId} />
                         <DisplayAllocatedUsers userList={userList} rUsers={rUser} />
-                        <Tasks />
+                        <Tasks currentId={currentId}  user={user}/>
                     </div>
                 </div>
             </div>
