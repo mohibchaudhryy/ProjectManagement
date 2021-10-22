@@ -43,7 +43,7 @@ const CreateProject = () => {
                             <h4 className='projectDescription'>Enter the Project Description</h4>
                             <Editor pDescription={pDescription} setpDescription={setpDescription} />
 
-                            <input type="submit" className="btn btn-success createProjectBtn" name="loginButton" value="Create Project" /> 
+                            <input type="submit" className="btn btn-success createProjectBtn" name="createProjectButton" value="Create Project" /> 
                         </form>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import { CREATEPROJECT, ALLPROJECTS } from '../constants/actionTypes';
+import { CREATEPROJECT, ALLPROJECTS, PROJECTUPDATE } from '../constants/actionTypes';
 
 const projectsReducer = (state = { projects: [] }, action) => {
     switch (action.type) {
@@ -7,6 +7,8 @@ const projectsReducer = (state = { projects: [] }, action) => {
         return state;
     case ALLPROJECTS:
       return {...state, projects: [...action.payload]}
+    case PROJECTUPDATE:
+      return {...state, projects: [...state.projects.map(file=>file._id===action.payload._id?file=action.payload:file)]}
     default:
       return state;
   }

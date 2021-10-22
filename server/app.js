@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/user", userRouter);
 app.use("/admin/projects", projectRouter);
-
+app.use("/ruser",projectRouter)
 
 
 app.get('/', (req, res) => {

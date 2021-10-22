@@ -1,4 +1,4 @@
-import { CREATEPROJECT, ALLPROJECTS } from '../constants/actionTypes';
+import { CREATEPROJECT, ALLPROJECTS, PROJECTUPDATE } from '../constants/actionTypes';
 
 import * as api from '../api/index.js';
 
@@ -14,6 +14,23 @@ export const allProjects = () => async (dispatch) =>{
   try {
     const {data} = await api.allProjects();
     dispatch({type: ALLPROJECTS, payload: data})
+  } catch (err) {
+    console.log(err);
+  }
+}
+export const projectAllocation = (Data,id) => async (dispatch) => {
+  try {
+    const {data} = await api.allocateProject(Data,id);
+    dispatch({type:PROJECTUPDATE, payload: data})
+  } catch (err) {
+    console.log(err);
+  }
+}
+export const allAllocatedProjects = (id) => async (dispatch) =>{
+  try {
+    const {data} = await api.allAllocatedProjects(id);
+    dispatch({type: ALLPROJECTS, payload: data})
+
   } catch (err) {
     console.log(err);
   }

@@ -22,7 +22,7 @@ function App() {
         <Route path="/user/allusers" exact component={ AllRUsers } />
         <Route path="/admin/projects/createproject" exact component={ CreateProject } />
         <Route path="/admin/projects/allprojects" exact component={ AllProjects } />
-        <Route path="/ruser/projects" exact component={ MyProjects } />
+        <Route path="/ruser/myprojects" exact component={ MyProjects } />
       </Switch>
 
     </BrowserRouter>

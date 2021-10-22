@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const RUser = ({rUser, i,handleModal}) => {
     return (
@@ -8,9 +8,6 @@ const RUser = ({rUser, i,handleModal}) => {
             <td>{rUser.userName}</td>
             <td>{rUser.creationDate}</td>
         </tr>
-
-        
-    
     )
 }
 

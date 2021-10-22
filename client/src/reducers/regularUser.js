@@ -8,7 +8,6 @@ const rUserReducer = (state = { rUser: [] }, action) => {
     case ALLREGULARUSER:
       return {...state, rUser: [...action.payload]}
     case UPDATEUSER:
-      console.log(state.rUser);
       return {...state, rUser: [...state.rUser.map(file=>file._id===action.payload._id?file=action.payload:file)]}
     default:
       return state;
