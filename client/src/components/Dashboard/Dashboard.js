@@ -25,7 +25,7 @@ const Dashboard = () => {
                     <div className="leftN"><AdminNavigation /></div>:
                     <div className="leftN"><UserNavigation /></div>
                 }
-                <div>third</div>
+                <div>Dashboard</div>
             </div>
         </div>
     )

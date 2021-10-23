@@ -1,0 +1,77 @@
+.createProjectDiv{
+    padding: 20px 80px 30px 80px;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.createProjectHeading{
+    margin-bottom: 20px;
+}
+.pTInput{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.createProjectBtn{
+    margin: 25px;
+    width: 210px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+.projectDescription{
+    margin: 40px 0 10px 0;
+    color: #6c757d;
+    font-weight: bold;
+    font-size: 24px;
+}
+.createProjectBtn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* ------------------- all project components */
+.prjHead{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.dropdown{
+    margin:0 auto;
+    width: 300px;
+}
+.userDropDown{
+    text-align: center;
+    font-weight: bold;
+}
+.allPDes{
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    width: 800px;
+    height: fit-content;
+    padding: 25px;
+}
+.allocateBtn{
+    float: right;
+    margin-top: 28px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.allocationBtnDiv{
+    padding: 0 20% 0 20%;
+}
+.allAllocatedUsers{
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    width: 800px;
+    height: fit-content;
+    padding: 25px;
+}
