@@ -19,6 +19,7 @@ const Tasks = ({currentId, user}) => {
                 <thead>
                     <tr>
                         <th>Task Name</th>
+                        <th>Created By</th>
                         <th>Creation Date and Time</th>
                         <th></th>
                         <th></th>
