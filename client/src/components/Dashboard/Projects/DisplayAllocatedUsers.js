@@ -27,7 +27,7 @@ const DisplayAllocatedUsers = ({userList, rUsers}) => {
                     {rUsers.map((file,i) => userList?.includes(file._id)? 
                             <tr key={i}>
                                 <td  > {file.userName}</td>
-                                <td  > Date: {moment(file.creationDate).format('DD:MM:YY')}<br/>Time: {moment(file.creationDate).format('hh:mm A')}</td>
+                                <td  > Date: {moment(file.creationDate).format('DD:MM:YY')} Time: {moment(file.creationDate).format('hh:mm A')}</td>
 
                             </tr> :null
                         )}

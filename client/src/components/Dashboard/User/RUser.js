@@ -1,4 +1,6 @@
 import React from 'react';
+import moment from 'moment';
+
 
 const RUser = ({rUser, i,handleModal}) => {
     return (
@@ -6,7 +8,7 @@ const RUser = ({rUser, i,handleModal}) => {
             <th scope="row">{i}</th>
             <td>{rUser.name}</td>
             <td>{rUser.userName}</td>
-            <td>{rUser.creationDate}</td>
+            <td>Date: {moment(rUser.creationDate).format('DD:MM:YY')}<br/>Time: {moment(rUser.creationDate).format('hh:mm')}</td>
         </tr>
     )
 }

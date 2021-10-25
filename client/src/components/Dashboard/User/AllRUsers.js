@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import jwt from 'jsonwebtoken';
 import { useDispatch, useSelector } from 'react-redux';
-import Modal from 'react-modal';    
+import UserModal from './UserModal';    
 
 import Head from '../Head';
 import AdminNavigation from '../AdminNavigation';
@@ -11,7 +11,6 @@ import { AllRegularUsers, updateUser } from '../../../actions/user';
 
 import RUser from './RUser';
 
-Modal.setAppElement("#root");
 const AllRUsers = () => {
     const history = useHistory();
     const [token] = useState(JSON.parse(localStorage.getItem('token')));
@@ -75,27 +74,8 @@ const AllRUsers = () => {
                                     rUser.map((file,i) => <RUser handleModal={handleModal} key={i} i={i+1} rUser={file}/>)
                                 }
                             </tbody>
-                        </table>   
-                        <Modal style={{
-                            overlay:{
-                                backgroundColor: 'rgba(6,6,22,0.9)'
-                            },
-                            content:{
-                                top:'35%',
-                                left: '40%',
-                                right: '20%',
-                                bottom: '40%',
-                                backgroundColor: 'white'
-                            }
-                        }} isOpen={show} onRequestClose={closeModal}>
-                            <div className='modalContentContainer'>
-                                <h2>User Name: {fileData?.userName}</h2>
-                                <input type="password" placeholder="New password"value={newPass} onChange={(e)=>setNewPass(e.target.value)} className='form-control modalInput'/>
-                                <button className="btn btn-success modalSuccessBtn"  onClick={newPassSubmit}>Update</button>
-                                <button className="btn btn-danger modalCloseBtn"  onClick={closeModal}>close</button>
-
-                            </div>
-                        </Modal> 
+                            <UserModal fileData={fileData} show={show} newPassSubmit={newPassSubmit} setNewPass={setNewPass} newPass={newPass} closeModal={closeModal}/>
+                        </table> 
                     </div>
 
                 </div>

@@ -40,8 +40,7 @@ const AllProject = () => {
     
     useEffect(()=>{
         dispatch(allProjects());
-        setDescription(ides)
-    },[dispatch,ides]);
+    },[dispatch]);
     
     const handleProjectSelect = (e) => {
         let arrr =  '';
@@ -53,7 +52,7 @@ const AllProject = () => {
     if(!user) history.push('./user/signin');
 
     return (
-        <div className="gridContainer">
+        <div className="gridContainer ">
             <div > <Head /> </div>
             <div className="grifContainer1">
                 {user.userType === 'admin'?
@@ -61,8 +60,8 @@ const AllProject = () => {
                     <div className="leftN"><UserNavigation /></div>
                 }
                 <div className="third">
-                    <div >
-                        <h2 className="prjHead">All Projects</h2>
+                    <div style={{width:'100%'}}>
+                        <h3 className="prjHead">All Projects</h3>
                         <DropDown projects={projects} handleProjectSelect={handleProjectSelect}/>
                         <DescriptionDisplay description={description}/>
                         <ProjectAllocation projects={projects} currentId={currentId} />

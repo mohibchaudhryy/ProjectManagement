@@ -1,29 +1,32 @@
 .createProjectDiv{
-    padding: 20px 80px 30px 80px;
-    width: 900px;
+    padding: 15px 80px 25px 80px;
+    width: 650px;
     margin: 0 auto;
     text-align: center;
+    border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .createProjectHeading{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #484b4d;
 }
 .pTInput{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    width: 70%;
+    width: 55%;
     margin: 0 auto;
 }
 .createProjectBtn{
     margin: 25px;
-    width: 210px;
+    width: 180px;
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
 }
 .projectDescription{
-    margin: 40px 0 10px 0;
+    margin: 25px 0 10px 0;
     color: #6c757d;
     font-weight: bold;
     font-size: 24px;
@@ -36,7 +39,7 @@
 .prjHead{
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .dropdown{
     margin:0 auto;
@@ -48,18 +51,20 @@
 }
 .allPDes{
     margin: 0 auto;
-    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
     border-radius: 12px;
-    width: 800px;
+    width: 650px;
     height: fit-content;
-    padding: 25px;
+    padding: 15px;
+}
+.allProdDesc{
+    font-size: 12px;
 }
 .allocateBtn{
     float: right;
-    margin-top: 28px;
+    margin-top: 17px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     
 }
 .allocationBtnDiv{
@@ -67,11 +72,53 @@
 }
 .allAllocatedUsers{
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 70px;
+    font-size: 12px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
     border-radius: 12px;
     width: 800px;
     height: fit-content;
-    padding: 25px;
+    padding: 10px ;
+}
+.modalDiv{
+    font-size: 12px;
+}
+.modalCloseCross{
+    font-size: 12px;
+    height: 30px;
+    width: 34px;
+}
+.modalClose{
+    font-size: 12px;
+
+}
+.modalAllocate{
+    font-size: 12px;
+
+}
+
+.modalCloseBtn, .modalSuccessBtn{
+    height: 45px;
+    font-size: large;
+    font-weight: bold;
+    width: 100px;
+    margin-top: 10px;
+}
+.modalContentContainer{
+    text-align: center;
+    padding-top: 15px;
+}
+.modalCloseBtn{
+    margin-left: 4px;
+
+} 
+.modalSuccessBtn{
+    width: 100px;
+    margin-right: 4px;
+
+}
+.modalInput{
+    margin: 0 auto;
+    width: 350px;
 }

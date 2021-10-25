@@ -8,6 +8,7 @@ import './tasks.css';
 const Tasks = ({currentId, user}) => {
     const dispatch = useDispatch();
     const {tasks} = useSelector(state=>state.tasks);
+    
     useEffect(() => {
         dispatch(allTasks());
     },[dispatch])
@@ -15,11 +16,11 @@ const Tasks = ({currentId, user}) => {
     return (
         <div className="tasks">
             <h5 >Tasks </h5>
-            <table className='table '> 
+            {user && <table className='table '> 
                 <thead>
                     <tr>
                         <th>Task Name</th>
-                        <th>Created By</th>
+                        {user.userType === 'admin' && <th>Created By</th>}
                         <th>Creation Date and Time</th>
                         <th></th>
                         <th></th>
@@ -27,13 +28,13 @@ const Tasks = ({currentId, user}) => {
                 </thead>
                 <tbody>                
                     {user.userType === 'rUser' &&
-                        tasks.map((file,i)=> file.project.projectID=== currentId&&file.project.userID===user.id ? <Task key={i} file={file}/> : null
+                        tasks.map((file,i)=> file.project.projectID=== currentId&&file.project.userID===user.id ? <Task key={i} file={file} createdByFlag={false} lag/> : null
                         )}
                     {user.userType === 'admin' &&
-                        tasks.map((file,i)=> file.project.projectID=== currentId? <Task key={i} file={file}/> : null
+                        tasks.map((file,i)=> file.project.projectID=== currentId? <Task key={i} file={file} createdByFlag={true} /> : null
                         )}
                 </tbody>
-            </table>
+            </table>}
         </div>
     )
 }

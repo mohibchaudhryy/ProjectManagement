@@ -2,30 +2,35 @@
 .createUserDiv{
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-
+    margin-top: 12px;
     padding: 25px 20px 25px 20px;
     border-radius: 12px;
     text-align: center;
-    width: 400px;
+    width: 450px;
 }
 .createUserHeading{
     margin-bottom: 1.5rem;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
 }
 .createUserBtn{
-    margin-top: 2rem;
-    height: 50px;
-    width: 150px;
-    font-size: larger;
+    margin-top: 1.2frem;
+    height: 45px;
+    width: 120px;
+    font-size: medium;
     font-weight: bold;
 }
 /* ----------------    RUser */
 
 
 .allRUsersTableDiv{
+    overflow-y: scroll;
+    height: 450px;
     margin: 0 auto;
-    width : 750px;
+    width : 700px;
+    box-shadow: 0 4px 8px 0 rgba(35, 33, 143, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    font-size: 12px;
 }
 .allRUserTitle{
     text-align: center;
@@ -41,29 +46,12 @@
 
 }
 
-
-
-.modalCloseBtn, .modalSuccessBtn{
-    height: 45px;
-    font-size: large;
-    font-weight: bold;
-    width: 100px;
-    margin-top: 10px;
-}
-.modalContentContainer{
-    text-align: center;
-    padding-top: 15px;
-}
-.modalCloseBtn{
-    margin-left: 4px;
-
-} 
-.modalSuccessBtn{
-    width: 100px;
-    margin-right: 4px;
-
-}
-.modalInput{
+.inputCreateUser{
+    font-size: 14px;
+    width: 280px;
+    align-items: center;
     margin: 0 auto;
-    width: 350px;
+    margin-bottom: 10px;
 }
+
+

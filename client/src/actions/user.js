@@ -1,12 +1,15 @@
 import { SIGNIN, CREATEUSER, ALLREGULARUSER, UPDATEUSER } from '../constants/actionTypes';
+import jwt from 'jsonwebtoken';
 
-import * as api from '../api/index.js';
+import * as api from '../api/index';
 
 export const userSignIn = (Data, history) => async (dispatch) => {
     try {
       const {data} = await api.signIn(Data);
       dispatch({ type: SIGNIN, payload: data });
-      history.push('/dashboard');
+      const temp = jwt.decode(data.token);
+      if(temp.userType==='admin')history.push('/admin/projects/allprojects');
+        else history.push('/ruser/myprojects');
     } catch (error) {
       console.log(error);
     }

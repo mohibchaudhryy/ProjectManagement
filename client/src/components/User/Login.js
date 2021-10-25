@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import jwt from 'jsonwebtoken';
 
 import { userSignIn } from '../../actions/user';
 
@@ -8,7 +9,7 @@ import './Login.css';
 
 const Login = () => {
     const dispatch = useDispatch();
-    const [token] = useState(JSON.parse(localStorage.getItem('token')));
+    const user = jwt.decode(JSON.parse(localStorage.getItem('token')));
     const [ formData, setFormData] = useState({ userName: '', password: '', userType: 'admin' });
     const [ userSelect ] = useState([
         {
@@ -23,7 +24,10 @@ const Login = () => {
 
     const history = useHistory();
     
-    if(token) history.push('/dashboard');
+    if(user){
+        if(user.userType==='admin')history.push('/admin/projects/allprojects');
+        else history.push('/ruser/myprojects');
+    } 
     
 
     const inputHandler = (e) => {

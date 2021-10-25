@@ -1,14 +1,23 @@
 .head{
     background: white;
-    min-height: 60px;
+    height: 50px;
     color: white;
     background: #111;
     position: relative;    
 }
+.userName{
+    /* float: right; */
+    right: 25px;
+    margin-right: 150px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .logoutBtn{
-    width: 100px;
-    height: 45px;
-    font-size: large;
+    width: 75px;
+    height: 35px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 4px;
     right: 35px;
@@ -20,35 +29,46 @@
 }
 .imageLogo{
     content: url('../../images/Selection_008.png');
-    height: 55px;
+    height: 35px;
     margin-left: 25px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
+
 .imageLogo:hover{
     cursor: pointer;
-}
-.leftN{
-    min-width: 300px;
 }
 .navigation{
     color: white;
     background: #1b1b1b;
-    min-height: 1000px;
     color: white;
+    width: 250px;
+    height:100%;
 }
 .gridContainer{
-    display: grid;
-    grid-template-rows: 0fr 5fr ;
+    height: 850px;
+    background: white;
+
 }
 .grifContainer1{
     background: white;
-    display: grid;
-    grid-template-columns: 0.7fr 3fr;
 }
 .third{
-    height: fit-content;
-    overflow-y: scroll;
-    height: 900px;
+    overflow-y:scroll;
+    height: 600px;
     padding: 20px;
-    margin: 0 auto;
-    width: 100%;
+    padding-bottom: 200px;
+    
+}
+.leftN{
+    height: 700px;
+    float: left;
+    width: fit-content;
+}
+@media screen and (max-width: 600px) {
+    .leftN {
+      display: none;
+    }
 }

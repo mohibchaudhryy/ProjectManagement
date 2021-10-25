@@ -16,42 +16,19 @@ li:hover{
 }
 a{
     color: white;
-    list-style: none;
+    /* list-style: none; */
 }
 a:hover{
     color: white;
 }
 nav ul li{
-    line-height: 60px;
+    line-height: 40px;
     border-bottom: 1px solid rgba(255,255,255,0.1);    
+    font-size: 14px;
 }
-.outer{
-    position: relative;
-    text-decoration: none;
-    font-size: 18px;
-    padding-left: 40px;
-    font-weight: 500;
-    display:block;
-    width: 100%;
-    border-left: 3px solid transparent;
 
-}
-.outer a{
-    color: white;
-    
-}
-nav ul li ul li .a:hover{
+.sidebar ul li:hover{
     color: cyan;
     background: #1e1e1e;
     border-left-color: cyan;
-}
-.inner{
-    line-height: 42px;
-    border-bottom: none;
-}
-
-.inner{
-    font-size: 17px;
-    color: #e6e6e6;
-    padding-left: 80px;
 }

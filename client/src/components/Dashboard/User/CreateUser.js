@@ -39,9 +39,9 @@ const CreateUser = () => {
                     <div className="createUserDiv">
                         <h2 className="createUserHeading">Create Regular User</h2>
                         <form onSubmit={handleCreateUser}>
-                            <input type="text" placeholder="Name" className="form-control inputS" name="name" value={formData.name} onChange={inputHandler}/>
-                            <input type="text" placeholder="User Name" className="form-control inputS" name="userName" value={formData.userName} onChange={inputHandler}/>
-                            <input type="password" placeholder="Password" className="form-control inputS" name="password" value={formData.password} onChange={inputHandler}/>
+                            <input type="text" placeholder="Name" className="form-control inputCreateUser" name="name" value={formData.name} onChange={inputHandler}/>
+                            <input type="text" placeholder="User Name" className="form-control inputCreateUser" name="userName" value={formData.userName} onChange={inputHandler}/>
+                            <input type="password" placeholder="Password" className="form-control inputCreateUser" name="password" value={formData.password} onChange={inputHandler}/>
 
                             <input type="submit" className="btn btn-primary createUserBtn" name="loginButton" value="Create User" /> 
                         </form>

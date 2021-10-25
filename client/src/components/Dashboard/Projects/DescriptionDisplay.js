@@ -4,7 +4,8 @@ import parse from 'html-react-parser';
 const DescriptionDisplay = ({description}) => {
     return (
         <div className="allPDes">
-            <h5>Description</h5>
+            <h6>Description</h6>
+            <hr/>
             <div className='allProdDesc'>{parse(description)}</div>
             
         </div>

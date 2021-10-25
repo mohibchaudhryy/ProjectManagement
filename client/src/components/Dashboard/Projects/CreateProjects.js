@@ -37,10 +37,10 @@ const CreateProject = () => {
                 }
                 <div className="third">
                     <div className="createProjectDiv">
-                        <h1 className="createProjectHeading">Create Project</h1><hr/>
+                        <h3 className="createProjectHeading">Create Project</h3><hr/>
                         <form onSubmit={handleCreateProject}>
                             <input type="text" placeholder="Enter the Project Title" className="form-control pTInput" name="pTitle" value={formData.name} onChange={inputHandler}/>
-                            <h4 className='projectDescription'>Enter the Project Description</h4>
+                            <h5 className='projectDescription'>Enter the Project Description</h5>
                             <Editor pDescription={pDescription} setpDescription={setpDescription} />
 
                             <input type="submit" className="btn btn-success createProjectBtn" name="createProjectButton" value="Create Project" /> 

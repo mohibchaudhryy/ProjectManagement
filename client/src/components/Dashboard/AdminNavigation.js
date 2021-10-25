@@ -31,7 +31,7 @@ const AdminNavigation = () => {
                     <li onClick={userNHandler}><p ><i className="fas fa-users-cog"></i> User </p>
                         {userN?
                             <ul className="accShow">
-                                <li onClick={handlePropagation}><Link to="/user/createuser"><i className="far fa-user"></i> Create User</Link></li>
+                                <li className='innerLi' onClick={handlePropagation}><Link to="/user/createuser"><i className="far fa-user"></i> Create User</Link></li>
                                 <li onClick={handlePropagation}><Link to="/user/allusers"><i className="fas fa-users"></i> All Users</Link></li>
                             </ul>:<></>
                         }
